@@ -1,0 +1,18 @@
+<%- include('plugins/header'); -%>
+<section class="compose">
+    <h1 class="title">compose</h1>
+    <div class="box">
+        <form action="/compose" method="post">
+        <label for="composeTitle" class="composeBox">Title</label>
+        <input type="text" id="composeTitle" placeholder="Enter title" class="composeBox inputBox" autocomplete="off" name="titleJournal">
+        <label for="messagePost" class="composeBox">Post</label>
+        <textarea rows="10" id="messagePost" placeholder="Enter text here" class="composeBox inputBox" name="textJournal"></textarea>
+        <button type="submit" name="submit">Public</button>
+        </form>
+        
+    </div>
+
+</section>
+<%- include('plugins/footer'); -%>
+
+    

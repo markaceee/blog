@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html{
+    font-size: 60%;
+    overflow-x: hidden;
+}
+
+section{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 2rem 0;
+    min-height: calc(100vh - 100.78px - 77px);
+}
+
+section p{
+    font-size: 2rem;
+    line-height: 2;
+    margin: 1rem 0;
+    text-indent: 6rem;
+}
+
+
+
+/*------------------------------------------------- HEADER STARTS -------------------------------------------------*/
+header{
+    background-color: #FAF6FA;
+    padding: 2.5rem 1.5rem;
+}
+
+header .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    letter-spacing: .5rem;
+    margin: 5rem 0;
+}
+
+header .logo a{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    letter-spacing: .5rem;
+    color: rgb(77, 77, 77);
+}
+
+.box .navbar a{
+    text-transform: uppercase;
+    color: rgb(77, 77, 77);
+    margin-left: 2rem;
+    letter-spacing: .5rem;
+    font-size: 1.5rem;
+}
+
+.box .navbar a:hover{
+    color: #000;
+    text-decoration: underline;
+}
+
+#menu-btn{
+    display: none;
+}
+/*------------------------------------------------- HEADER ENDS -------------------------------------------------*/
+
+/*------------------------------------------------- MAIN STARTS -------------------------------------------------*/
+.main .titleNothing{
+    margin: 3rem 0;
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: red;
+}
+
+.main .box .composeDay{ 
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-top: 3rem;
+}
+
+.main .box .composeTitle{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.main .box p{
+    font-size: 1.5rem;
+    line-height: 2;
+}
+/*------------------------------------------------- MAIN ENDS -------------------------------------------------*/
+
+
+
+
+/*------------------------------------------------- COMPOSE STARTS -------------------------------------------------*/
+.compose .box .composeBox{
+    display: block; 
+    margin: 1.5rem 0;
+    width: 100%;
+}
+
+.compose .box label{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+.compose .box .inputBox{
+    border: 1px solid;
+    border-radius: .5rem;
+    padding: 1.5rem;
+    font-size: 2rem;
+}
+
+.compose .box button{
+    padding: 1.5rem;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight: 700;
+    background-color: rgb(46, 46, 46);
+    color: #fff;
+}
+
+.compose .box button:hover{
+    background-color: #fff;
+    color: rgb(46, 46, 46);
+    border: .5px solid;
+}
+
+/*------------------------------------------------- COMPOSE ENDS -------------------------------------------------*/
+
+
+
+/*------------------------------------------------- FOOTER STARTS -------------------------------------------------*/
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+    background-color: #f0f0f0;
+}
+
+footer p{
+    font-size: 2rem;
+    font-weight: 200;
+    text-transform: capitalize;
+    letter-spacing: .5rem;
+}  
+
+
+
+
+
+
+/*------------------------------------------------- FOOTER ENDS -------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1080px) {
+    section{
+        padding: 5rem;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 786px){
+    html{
+        font-size: 55%;
+    }
+    
+    section{
+        padding: 3;
+    }
+
+    .title{
+        margin: 3rem 0;
+    }
+
+    #menu-btn{
+        display: inline-block;
+        cursor: pointer;
+        font-size: 2.5rem;
+        color: rgb(77, 77, 77);
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 8%; left: 0; right: 0;
+        border-bottom: .5px solid;
+        border-color: rgb(77, 77, 77);
+        background-color: #fff;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: .2s linear;
+    }
+
+    header .navbar a{
+        display: block;
+        margin: 2rem;
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        
+    }
+}
+
+@media (max-width: 360px){
+
+    section{
+        padding: 3rem;
+    }
+
+    .title{
+        margin: 2rem 0;
+    }
+
+
+
+}

@@ -1,0 +1,24 @@
+<%- include('plugins/header'); -%>
+<section class="main">
+    <h1 class="title">home</h1>
+    <p>&nbsp&nbsp&nbsp&nbsp&nbspLorem ipsum dolor sit amet, odio vitae massa urna justo nec, a proin amet, ut facilisis ipsum eu aliquam nullam, sit ut adipiscing morbi wisi turpis, ut aliquet imperdiet autem vulputate excepteur.</p>
+
+    <% if(numOfDay === 0){ %>
+       <h3 class="titleNothing">Nothing to publish yet!</h3> 
+    <% } else { %>
+        <% for (var i = 0; i < numOfDay; i++){ %>
+            <div class="box">
+                <div class="composeDay">Day <%= i+1 %></div>
+                <h3 class="composeTitle">Title: <%= composed[i].title %></h3>
+                <p class="composePrgraph" ><%= composed[i].text.substring(0,100) %>... <a href ="/posts/<%= composed[i].title %>" >Read more</a></p>
+            </div>
+        <% } %>
+    <% } %>
+</section>
+<%- include('plugins/footer'); -%>
+
+    
+
+    
+
+
